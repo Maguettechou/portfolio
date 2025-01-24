@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,96 +10,124 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
         }
+
         header {
-            background: #333;
+            background-color: #333;
             color: #fff;
             padding: 1rem 0;
             text-align: center;
         }
+
         nav ul {
             list-style: none;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            margin: 0;
         }
+
         nav ul li {
-            display: inline;
-            margin: 0 10px;
+            margin: 0 15px;
         }
+
         nav ul li a {
-            color: #fff;
             text-decoration: none;
+            color: #fff;
+            font-weight: bold;
         }
+
         section {
             padding: 2rem;
-            margin: 2rem 0;
         }
+
         footer {
-            background: #333;
-            color: #fff;
             text-align: center;
             padding: 1rem 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            margin-top: 0;
         }
     </style>
 </head>
+
 <body>
     <header>
-        <h1>Maguette Diop</h1>
-        <h2>Étudiante en BTS SIO option SISR</h2>
-        <p>Certifications : PIX, SecNumAcadémie</p>
-        <nav>
-            <ul>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#skills">Compétences</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Portfolio - Maguette Diop</h1>
+        <p>Étudiante en BTS SIO option SISR</p>
+        <p><strong>Certifications :</strong> PIX, SecNumAcadémie</p>
     </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
     <section id="about">
         <h2>À propos</h2>
-        <p>Passionnée par l'informatique, je suis actuellement en première année de BTS SIO option SISR (Solutions d'Infrastructure, Systèmes et Réseaux) au lycée Notre-Dame de la Providence. Mon objectif est de développer mes compétences dans les systèmes et réseaux pour devenir une professionnelle accomplie dans ce domaine.</p>
+        <div class="card">
+            <p>Passionnée par l'informatique, je suis actuellement en première année de BTS SIO option SISR (Solutions d'Infrastructure, Systèmes et Réseaux) au lycée Notre-Dame de la Providence. Mon objectif est de développer mes compétences dans les systèmes et réseaux pour devenir une professionnelle accomplie dans ce domaine.</p>
+        </div>
     </section>
 
     <section id="skills">
         <h2>Compétences</h2>
-        <ul>
-            <li>Administration système Windows et Linux</li>
-            <li>Virtualisation (VMware, VirtualBox)</li>
-            <li>Réseaux : Configuration et gestion</li>
-            <li>Scripts : Batch, PowerShell</li>
-        </ul>
+        <div class="card">
+            <ul>
+                <li>Administration système Windows et Linux</li>
+                <li>Virtualisation (VMware, VirtualBox)</li>
+                <li>Réseaux : Configuration et gestion</li>
+                <li>Scripts : Batch, PowerShell</li>
+            </ul>
+        </div>
     </section>
 
     <section id="projects">
         <h2>Projets</h2>
-        <ul>
-            <li>Audit de l'existant : Analyse des infrastructures réseau et système pour identifier les points à améliorer.</li>
-            <li>Préparation/Configuration du serveur Windows 2022 : Installation et paramétrage d'un serveur Windows 2022 pour un usage en entreprise.</li>
-            <li>Intégration d'une machine dans le domaine : Ajout d'ordinateurs clients à un domaine Active Directory.</li>
-            <li>Partage de ressources/Lecteurs réseau et stratégies : Mise en place de partages réseau et application de stratégies de groupe (GPO).</li>
-            <li>Partage d'imprimantes et déploiement via GPO : Configuration de partages d'imprimantes et déploiement automatique grâce aux stratégies de groupe.</li>
-            <li>Installation/Configuration d'un helpdesk (GLPI) : Mise en place et configuration de GLPI pour la gestion des tickets d'assistance.</li>
-            <li>Inventorier un parc informatique avec l'agent GLPI : Utilisation de l'agent GLPI pour recenser les équipements informatiques.</li>
-            <li>Installation/Configuration d'un cloud privé (Nextcloud) : Déploiement et configuration de Nextcloud pour un stockage cloud privé sécurisé.</li>
-        </ul>
+        <div class="card">
+            <ul>
+                <li>Audit de l'existant : Analyse des infrastructures réseau et système pour identifier les points à améliorer.</li>
+                <li>Préparation/Configuration du serveur Windows 2022 : Installation et paramétrage d'un serveur Windows 2022 pour un usage en entreprise.</li>
+                <li>Intégration d'une machine dans le domaine : Ajout d'ordinateurs clients à un domaine Active Directory.</li>
+                <li>Partage de ressources/Lecteurs réseau et stratégies : Mise en place de partages réseau et application de stratégies de groupe (GPO).</li>
+                <li>Partage d'imprimantes et déploiement via GPO : Configuration de partages d'imprimantes et déploiement automatique grâce aux stratégies de groupe.</li>
+                <li>Installation/Configuration d'un helpdesk (GLPI) : Mise en place et configuration de GLPI pour la gestion des tickets d'assistance.</li>
+                <li>Inventorier un parc informatique avec l'agent GLPI : Utilisation de l'agent GLPI pour recenser les équipements informatiques.</li>
+                <li>Installation/Configuration d'un cloud privé (Nextcloud) : Déploiement et configuration de Nextcloud pour un stockage cloud privé sécurisé.</li>
+            </ul>
+        </div>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
-        <ul>
-            <li>Email : <a href="mailto:md8118968@gmail.com">md8118968@gmail.com</a></li>
-            <li>Téléphone : <a href="tel:+33605584988">06 05 58 49 88</a></li>
-            <li>GitHub : <a href="https://github.com/Maguettechou" target="_blank">Maguettechou</a></li>
-        </ul>
+        <div class="card">
+            <p>Email : <a href="mailto:md8118968@gmail.com">md8118968@gmail.com</a></p>
+            <p>Téléphone : 06 05 58 49 88</p>
+            <p>GitHub : <a href="https://github.com/Maguettechou" target="_blank">Maguettechou</a></p>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Maguette Diop. Tous droits réservés.</p>
+        <p>© 2025 Maguette Diop. Tous droits réservés.</p>
     </footer>
 </body>
+
 </html>

@@ -1,257 +1,71 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Maguette Diop</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: #1e2a47; /* Bleu foncé */
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        header h1 {
-            font-size: 3rem;
-            margin: 0;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            font-style: italic;
-            margin-top: 10px;
-        }
-
-        nav {
-            background-color: #2d3e5f; /* Bleu moyen */
-            color: white;
-            display: flex;
-            justify-content: center;
-            padding: 15px 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 20px;
-            font-size: 1.1rem;
-            transition: color 0.3s;
-            padding: 10px 15px;
-        }
-
-        nav a:hover, nav a.active {
-            color: #00bcd4; /* Teinte cyan */
-        }
-
-        section {
-            padding: 80px 20px;
-            max-width: 1100px;
-            margin: auto;
-            text-align: center;
-        }
-
-        h2 {
-            font-size: 2.5rem;
-            color: #2c3e50; /* Gris foncé */
-            margin-bottom: 20px;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-        }
-
-        .card {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-
-        .card h3 {
-            font-size: 1.8rem;
-            color: #1e2a47; /* Bleu foncé */
-            margin-bottom: 15px;
-        }
-
-        .card p {
-            color: #7f8c8d; /* Gris clair */
-            font-size: 1rem;
-        }
-
-        footer {
-            background-color: #2d3e5f; /* Bleu moyen */
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
-
-        footer p {
-            margin: 0;
-        }
-
-        .button {
-            background-color: #00bcd4; /* Teinte cyan */
-            color: white;
-            padding: 12px 30px;
-            text-decoration: none;
-            border-radius: 25px;
-            margin-top: 20px;
-            font-size: 1.1rem;
-            transition: background-color 0.3s;
-        }
-
-        .button:hover {
-            background-color: #0097a7; /* Teinte cyan foncé */
-        }
-
-        @media screen and (max-width: 768px) {
-            .grid {
-                grid-template-columns: 1fr;
-            }
-
-            nav a {
-                margin: 0 10px;
-            }
-        }
-    </style>
+    <meta name="description" content="Portfolio de Maguette Diop, étudiante en BTS SIO option SISR">
+    <title>Portfolio - Maguette Diop</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+    <header>
+        <h1>Maguette Diop</h1>
+        <p>Étudiante en BTS SIO option SISR</p>
+        <p>Certifications : PIX, SecNumAcadémie</p>
+    </header>
 
-<header>
-    <h1>Portfolio de Maguette Diop</h1>
-    <p>Étudiante en BTS SIO, option SISR</p>
-</header>
+    <nav>
+        <ul>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-<!-- Menu de navigation -->
-<nav>
-    <a href="#about" class="nav-link">À propos</a>
-    <a href="#skills" class="nav-link">Compétences</a>
-    <a href="#certifications" class="nav-link">Certifications</a>
-    <a href="#projects" class="nav-link">Projets</a>
-    <a href="#contact" class="nav-link">Contact</a>
-</nav>
+    <main>
+        <section id="about">
+            <h2>À propos</h2>
+            <p>Passionnée par l'informatique, je suis actuellement en première année de BTS SIO option SISR (Solutions d'Infrastructure, Systèmes et Réseaux) au lycée Notre-Dame de la Providence. Mon objectif est de développer mes compétences dans les systèmes et réseaux pour devenir une professionnelle accomplie dans ce domaine.</p>
+        </section>
 
-<!-- À propos -->
-<section id="about">
-    <h2>À propos de moi</h2>
-    <p>
-        Je m'appelle <strong>Maguette Diop</strong>, et je suis actuellement en première année de BTS Services Informatiques aux Organisations, option SISR (Solutions d'Infrastructure, Systèmes et Réseaux). Passionnée par l'informatique depuis mon plus jeune âge, j'ai choisi de me spécialiser dans la gestion des infrastructures et des systèmes.
-    </p>
-    <p>
-        Curieuse et toujours en quête de nouvelles connaissances, je suis particulièrement attirée par l'administration des réseaux, la sécurité informatique et la gestion des systèmes d'exploitation. Mon objectif est de devenir une experte dans ces domaines et d'acquérir les compétences nécessaires pour optimiser les infrastructures IT dans le monde professionnel.
-    </p>
-    <a href="#contact" class="button">Consulter mon CV</a>
-    <a href="cv-maguette-diop.pdf" download class="button">Télécharger mon CV</a>
-</section>
+        <section id="competences">
+            <h2>Compétences</h2>
+            <ul>
+                <li>Administration système Windows et Linux</li>
+                <li>Virtualisation (VMware, VirtualBox)</li>
+                <li>Réseaux : Configuration et gestion</li>
+                <li>Scripts : Batch, PowerShell</li>
+            </ul>
+        </section>
 
-<!-- Compétences -->
-<section id="skills">
-    <h2>Mes compétences</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>Administration des systèmes</h3>
-            <p>Installation, configuration et gestion des systèmes d'exploitation (Linux, Windows Server).</p>
-        </div>
-        <div class="card">
-            <h3>Réseaux</h3>
-            <p>Configuration des réseaux locaux (LAN), gestion des VLAN et mise en place de la sécurité.</p>
-        </div>
-        <div class="card">
-            <h3>Sécurité</h3>
-            <p>Mise en place de solutions de sécurité des systèmes, gestion des pare-feu et des accès utilisateurs.</p>
-        </div>
-        <div class="card">
-            <h3>Virtualisation</h3>
-            <p>Création et gestion d'environnements virtuels avec VMware et VirtualBox.</p>
-        </div>
-        <div class="card">
-            <h3>Bases de données</h3>
-            <p>Gestion des bases de données SQL, création et optimisation des requêtes.</p>
-        </div>
-        <div class="card">
-            <h3>Automatisation</h3>
-            <p>Automatisation des tâches administratives via PowerShell, Bash et Python.</p>
-        </div>
-    </div>
-</section>
+        <section id="projets">
+            <h2>Projets</h2>
+            <ul>
+                <li><strong>Audit de l'existant</strong> : Analyse des infrastructures réseau et système pour identifier les points à améliorer.</li>
+                <li><strong>Préparation/Configuration du serveur Windows 2022</strong> : Installation et paramétrage d'un serveur Windows 2022 pour un usage en entreprise.</li>
+                <li><strong>Intégration d'une machine dans le domaine</strong> : Ajout d'ordinateurs clients à un domaine Active Directory.</li>
+                <li><strong>Partage de ressources/Lecteurs réseau et stratégies</strong> : Mise en place de partages réseau et application de stratégies de groupe (GPO).</li>
+                <li><strong>Partage d'imprimantes et déploiement via GPO</strong> : Configuration de partages d'imprimantes et déploiement automatique grâce aux stratégies de groupe.</li>
+                <li><strong>Installation/Configuration d'un helpdesk (GLPI)</strong> : Mise en place et configuration de GLPI pour la gestion des tickets d'assistance.</li>
+                <li><strong>Inventorier un parc informatique avec l'agent GLPI</strong> : Utilisation de l'agent GLPI pour recenser les équipements informatiques.</li>
+                <li><strong>Installation/Configuration d'un cloud privé (Nextcloud)</strong> : Déploiement et configuration de Nextcloud pour un stockage cloud privé sécurisé.</li>
+            </ul>
+        </section>
 
-<!-- Certifications -->
-<section id="certifications">
-    <h2>Mes Certifications</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>PIX</h3>
-            <p>Certification PIX, validant mes compétences en numérique dans divers domaines de l'informatique.</p>
-        </div>
-        <div class="card">
-            <h3>SecNumAcademie</h3>
-            <p>Certification SecNumAcademie, pour prouver mes compétences en cybersécurité.</p>
-        </div>
-    </div>
-</section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email : md8118968@gmail.com</p>
+            <p>Téléphone : 06 05 58 49 88</p>
+            <p>GitHub : <a href="https://github.com/Maguettechou" target="_blank">Maguettechou</a></p>
+        </section>
+    </main>
 
-<!-- Projets -->
-<section id="projects">
-    <h2>Mes projets</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>Réseau d'entreprise</h3>
-            <p>Création d'un réseau sécurisé pour une PME, configuration des VLAN et routage.</p>
-        </div>
-        <div class="card">
-            <h3>Installation d'un serveur Web</h3>
-            <p>Installation d'un serveur Apache et mise en place d'un site dynamique avec base de données MySQL.</p>
-        </div>
-        <div class="card">
-            <h3>Virtualisation</h3>
-            <p>Création d'un environnement virtuel pour tester différentes configurations serveur.</p>
-        </div>
-    </div>
-</section>
-
-<!-- Contact -->
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Pour toute question ou collaboration, n'hésitez pas à me contacter par email : <a href="mailto:md8118968@gmail.com">md8118968@gmail.com</a></p>
-    <p>Vous pouvez aussi me joindre par téléphone au : <strong>0605584988</strong></p>
-</section>
-
-<footer>
-    <p>&copy; 2025 Maguette Diop. Tous droits réservés.</p>
-</footer>
-
-<script>
-    // Gestion des liens de navigation
-    const navLinks = document.querySelectorAll('.nav-link');
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.forEach(link => link.classList.remove('active'));
-            link.classList.add('active');
-        });
-    });
-</script>
-
+    <footer>
+        <p>© 2025 Maguette Diop. Tous droits réservés.</p>
+    </footer>
 </body>
+
 </html>

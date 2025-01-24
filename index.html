@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Maguette Diop - Étudiante en BTS SIO, passionnée par l'informatique, les réseaux et la sécurité.">
+    <meta name="keywords" content="portfolio, Maguette Diop, BTS SIO, développeur, réseaux, sécurité">
+    <meta name="author" content="Maguette Diop">
     <title>Portfolio de Maguette Diop</title>
     <style>
+        :root {
+            --primary-color: #1e2a47;
+            --secondary-color: #2d3e5f;
+            --highlight-color: #00bcd4;
+            --bg-color: #f0f0f0;
+            --text-color: #333;
+        }
+
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
-            color: #333;
+            background-color: var(--bg-color);
+            color: var(--text-color);
             line-height: 1.6;
         }
 
         header {
-            background-color: #1e2a47; /* Bleu foncé */
+            background-color: var(--primary-color);
             color: white;
             text-align: center;
             padding: 60px 20px;
@@ -34,7 +46,7 @@
         }
 
         nav {
-            background-color: #2d3e5f; /* Bleu moyen */
+            background-color: var(--secondary-color);
             color: white;
             display: flex;
             justify-content: center;
@@ -53,8 +65,9 @@
             padding: 10px 15px;
         }
 
-        nav a:hover, nav a.active {
-            color: #00bcd4; /* Teinte cyan */
+        nav a:hover,
+        nav a.active {
+            color: var(--highlight-color);
         }
 
         section {
@@ -66,7 +79,7 @@
 
         h2 {
             font-size: 2.5rem;
-            color: #2c3e50; /* Gris foncé */
+            color: #2c3e50;
             margin-bottom: 20px;
         }
 
@@ -81,7 +94,9 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
+            opacity: 0;
+            animation: fadeIn 0.6s ease-in-out;
         }
 
         .card:hover {
@@ -91,17 +106,17 @@
 
         .card h3 {
             font-size: 1.8rem;
-            color: #1e2a47; /* Bleu foncé */
+            color: var(--primary-color);
             margin-bottom: 15px;
         }
 
         .card p {
-            color: #7f8c8d; /* Gris clair */
+            color: #7f8c8d;
             font-size: 1rem;
         }
 
         footer {
-            background-color: #2d3e5f; /* Bleu moyen */
+            background-color: var(--secondary-color);
             color: white;
             text-align: center;
             padding: 15px;
@@ -112,7 +127,7 @@
         }
 
         .button {
-            background-color: #00bcd4; /* Teinte cyan */
+            background-color: var(--highlight-color);
             color: white;
             padding: 12px 30px;
             text-decoration: none;
@@ -123,7 +138,7 @@
         }
 
         .button:hover {
-            background-color: #0097a7; /* Teinte cyan foncé */
+            background-color: #0097a7;
         }
 
         @media screen and (max-width: 768px) {
@@ -134,9 +149,33 @@
             nav a {
                 margin: 0 10px;
             }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            .button {
+                width: 100%;
+                padding: 15px;
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
         }
     </style>
 </head>
+
 <body>
 
 <header>
@@ -155,6 +194,7 @@
 <!-- À propos -->
 <section id="about">
     <h2>À propos de moi</h2>
+    <img src="ton_image.jpg" alt="Maguette Diop" style="width: 150px; border-radius: 50%; margin-bottom: 20px;">
     <p>
         Je m'appelle <strong>Maguette Diop</strong>, et je suis actuellement en première année de BTS Services Informatiques aux Organisations, option SISR (Solutions d'Infrastructure, Systèmes et Réseaux). Passionnée par l'informatique depuis mon plus jeune âge, j'ai choisi de me spécialiser dans la gestion des infrastructures et des systèmes.
     </p>
@@ -208,40 +248,4 @@
         <div class="card">
             <h3>Réseau d'entreprise</h3>
             <p>Création d'un réseau sécurisé pour une PME, configuration des VLAN et routage.</p>
-        </div>
-        <div class="card">
-            <h3>Installation d'un serveur Web</h3>
-            <p>Installation d'un serveur Apache et mise en place d'un site dynamique avec base de données MySQL.</p>
-        </div>
-        <div class="card">
-            <h3>Virtualisation</h3>
-            <p>Création d'un environnement virtuel pour tester différentes configurations serveur.</p>
-        </div>
-    </div>
-</section>
-
-<!-- Contact -->
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Pour toute question ou collaboration, n'hésitez pas à me contacter par email : <a href="mailto:maguette.diop@example.com">maguette.diop@example.com</a></p>
-    <p>Vous pouvez aussi télécharger mon CV en cliquant sur le lien suivant :</p>
-    <a href="cv-maguette-diop.pdf" download class="button">Télécharger mon CV</a>
-</section>
-
-<footer>
-    <p>&copy; 2025 Maguette Diop. Tous droits réservés.</p>
-</footer>
-
-<script>
-    // Gestion des liens de navigation
-    const navLinks = document.querySelectorAll('.nav-link');
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.forEach(link => link.classList.remove('active'));
-            link.classList.add('active');
-        });
-    });
-</script>
-
-</body>
-</html>
+            <a href="https://

@@ -5,101 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio de Maguette Diop</title>
     <style>
-        * {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
             line-height: 1.6;
         }
-
         header {
             background: #333;
             color: #fff;
             padding: 10px 20px;
-        }
-
-        header h1 {
             text-align: center;
-            margin-bottom: 10px;
         }
-
         nav {
+            background: #444;
+            color: #fff;
             display: flex;
             justify-content: center;
-            margin-top: 10px;
+            padding: 10px 0;
         }
-
         nav a {
-            color: white;
-            text-decoration: none;
+            color: #fff;
             margin: 0 15px;
-            padding: 5px 10px;
-            border-radius: 5px;
-            transition: background 0.3s;
+            text-decoration: none;
         }
-
         nav a:hover {
-            background: #555;
+            text-decoration: underline;
         }
-
         section {
             padding: 20px;
         }
-
-        section h2 {
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        .btn {
-            display: inline-block;
-            margin: 10px 5px;
-            padding: 10px 15px;
-            color: white;
-            background: #007BFF;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-
-        .btn:hover {
-            background: #0056b3;
-        }
-
         footer {
-            text-align: center;
             background: #333;
-            color: white;
-            padding: 10px 20px;
-            margin-top: 20px;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .button-group {
+            margin: 20px 0;
+        }
+        .button-group a {
+            text-decoration: none;
+            color: #fff;
+            background: #007BFF;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .button-group a:hover {
+            background: #0056b3;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Bienvenue sur mon portfolio</h1>
-        <nav>
-            <a href="#about">À propos de moi</a>
-            <a href="#skills">Compétences</a>
-            <a href="#certifications">Certifications</a>
-            <a href="#projects">Projets</a>
-            <a href="#contact">Contactez-moi</a>
-        </nav>
     </header>
-
+    <nav>
+        <a href="#about">À propos de moi</a>
+        <a href="#competences">Compétences</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contactez-moi</a>
+    </nav>
     <section id="about">
         <h2>À propos de moi</h2>
         <p>Je m'appelle Maguette Diop, étudiante en première année de BTS SIO option SISR au lycée Notre-Dame de la Providence. Passionnée par l'informatique, je m'intéresse particulièrement aux infrastructures réseaux et systèmes.</p>
         <p>Je suis déterminée à développer mes compétences et à construire une carrière dans ce domaine en pleine croissance.</p>
-        <a class="btn" href="cv.pdf" download>Télécharger mon CV</a>
-        <a class="btn" href="cv.pdf" target="_blank">Consulter mon CV</a>
+        <div class="button-group">
+            <a href="cv.pdf" target="_blank">Télécharger mon CV</a>
+            <a href="cv_online.html" target="_blank">Consulter mon CV</a>
+        </div>
     </section>
-
-    <section id="skills">
+    <section id="competences">
         <h2>Mes compétences</h2>
         <ul>
             <li><strong>Administration des systèmes :</strong> Installation, configuration et gestion des systèmes d'exploitation (Linux, Windows Server).</li>
@@ -110,7 +91,6 @@
             <li><strong>Automatisation :</strong> Automatisation des tâches administratives via PowerShell, Bash et Python.</li>
         </ul>
     </section>
-
     <section id="certifications">
         <h2>Mes certifications</h2>
         <ul>
@@ -118,7 +98,6 @@
             <li><strong>SecNumAcadémie :</strong> Formation en cybersécurité délivrée par l'ANSSI (Agence Nationale de la Sécurité des Systèmes d'Information).</li>
         </ul>
     </section>
-
     <section id="projects">
         <h2>Mes projets</h2>
         <ul>
@@ -126,13 +105,11 @@
             <li><strong>Projet 2 :</strong> Mise en place d'une architecture réseau virtuelle avec VirtualBox.</li>
         </ul>
     </section>
-
     <section id="contact">
         <h2>Contactez-moi</h2>
-        <p>Email : <a href="mailto:md8118968@gmail.com">md8118968@gmail.com</a></p>
-        <p>Téléphone : <a href="tel:0605584988">06 05 58 49 88</a></p>
+        <p><strong>Email :</strong> md8118968@gmail.com</p>
+        <p><strong>Téléphone :</strong> 06 05 58 49 88</p>
     </section>
-
     <footer>
         <p>© 2025 Maguette Diop. Tous droits réservés.</p>
     </footer>

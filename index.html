@@ -9,58 +9,55 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            background-color: #f4f4f4;
         }
         header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 0;
+            background-color: #333;
+            color: white;
             text-align: center;
+            padding: 20px 0;
         }
         nav {
-            display: flex;
-            justify-content: center;
-            background: #444;
-            padding: 0.5rem;
+            text-align: center;
+            background-color: #444;
+            padding: 10px 0;
         }
         nav a {
-            color: #fff;
+            color: white;
             text-decoration: none;
-            margin: 0 1rem;
-            padding: 0.5rem 1rem;
+            margin: 0 15px;
+            font-size: 16px;
         }
         nav a:hover {
-            background: #555;
-            border-radius: 5px;
+            text-decoration: underline;
         }
-        section {
-            padding: 2rem;
+        main {
+            padding: 40px 20px;
+            text-align: center;
         }
         h2 {
             color: #333;
         }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
+        .section {
+            margin-bottom: 40px;
         }
-        .btn {
-            display: inline-block;
-            margin: 1rem 0.5rem;
-            padding: 0.5rem 1rem;
-            background: #007BFF;
-            color: #fff;
+        .contact a {
+            color: #333;
             text-decoration: none;
-            border-radius: 5px;
         }
-        .btn:hover {
-            background: #0056b3;
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
         }
     </style>
 </head>
 <body>
+
     <header>
         <h1>Bienvenue sur mon portfolio</h1>
     </header>
@@ -73,50 +70,52 @@
         <a href="#contact">Contactez-moi</a>
     </nav>
 
-    <section id="about">
-        <h2>À propos de moi</h2>
-        <p>Je m'appelle Maguette Diop, étudiante en première année de BTS SIO option SISR au lycée Notre-Dame de la Providence. Passionnée par l'informatique, je m'intéresse particulièrement aux infrastructures réseaux et systèmes.</p>
-        <p>Je suis déterminée à développer mes compétences et à construire une carrière dans ce domaine en pleine croissance.</p>
-        <a class="btn" href="CV_Maguette_Diop.pdf" download>Télécharger mon CV</a>
-        <a class="btn" href="CV_Maguette_Diop.pdf" target="_blank">Consulter mon CV</a>
-    </section>
+    <main>
+        <section id="about" class="section">
+            <h2>À propos de moi</h2>
+            <p>Je m'appelle Maguette Diop, étudiante en première année de BTS SIO option SISR au lycée Notre-Dame de la Providence. Passionnée par l'informatique, je m'intéresse particulièrement aux infrastructures réseaux et systèmes.</p>
+            <p>Je suis déterminée à développer mes compétences et à construire une carrière dans ce domaine en pleine croissance.</p>
+            <p><a href="cv.pdf" download>Télécharger mon CV</a> | <a href="cv.pdf" target="_blank">Consulter mon CV</a></p>
+        </section>
 
-    <section id="skills">
-        <h2>Mes compétences</h2>
-        <ul>
-            <li><strong>Administration des systèmes :</strong> Installation, configuration et gestion des systèmes d'exploitation (Linux, Windows Server).</li>
-            <li><strong>Réseaux :</strong> Configuration des réseaux locaux (LAN), gestion des VLAN et mise en place de la sécurité.</li>
-            <li><strong>Sécurité :</strong> Mise en place de solutions de sécurité des systèmes, gestion des pare-feu et des accès utilisateurs.</li>
-            <li><strong>Virtualisation :</strong> Création et gestion d'environnements virtuels avec VMware et VirtualBox.</li>
-            <li><strong>Bases de données :</strong> Gestion des bases de données SQL, création et optimisation des requêtes.</li>
-            <li><strong>Automatisation :</strong> Automatisation des tâches administratives via PowerShell, Bash et Python.</li>
-        </ul>
-    </section>
+        <section id="skills" class="section">
+            <h2>Mes compétences</h2>
+            <ul>
+                <li><strong>Administration des systèmes :</strong> Installation, configuration et gestion des systèmes d'exploitation (Linux, Windows Server).</li>
+                <li><strong>Réseaux :</strong> Configuration des réseaux locaux (LAN), gestion des VLAN et mise en place de la sécurité.</li>
+                <li><strong>Sécurité :</strong> Mise en place de solutions de sécurité des systèmes, gestion des pare-feu et des accès utilisateurs.</li>
+                <li><strong>Virtualisation :</strong> Création et gestion d'environnements virtuels avec VMware et VirtualBox.</li>
+                <li><strong>Bases de données :</strong> Gestion des bases de données SQL, création et optimisation des requêtes.</li>
+                <li><strong>Automatisation :</strong> Automatisation des tâches administratives via PowerShell, Bash et Python.</li>
+            </ul>
+        </section>
 
-    <section id="certifications">
-        <h2>Mes certifications</h2>
-        <ul>
-            <li><strong>PIX :</strong> Certification en compétences numériques reconnue par l'État français.</li>
-            <li><strong>SecNumAcadémie :</strong> Formation en cybersécurité délivrée par l'ANSSI (Agence Nationale de la Sécurité des Systèmes d'Information).</li>
-        </ul>
-    </section>
+        <section id="certifications" class="section">
+            <h2>Mes certifications</h2>
+            <ul>
+                <li><strong>PIX :</strong> Certification en compétences numériques reconnue par l'État français.</li>
+                <li><strong>SecNumAcadémie :</strong> Formation en cybersécurité délivrée par l'ANSSI (Agence Nationale de la Sécurité des Systèmes d'Information).</li>
+            </ul>
+        </section>
 
-    <section id="projects">
-        <h2>Mes projets</h2>
-        <ul>
-            <li><strong>Projet 1 :</strong> Réalisation d'un serveur web sécurisé sous Linux.</li>
-            <li><strong>Projet 2 :</strong> Mise en place d'une architecture réseau virtuelle avec VirtualBox.</li>
-        </ul>
-    </section>
+        <section id="projects" class="section">
+            <h2>Mes projets</h2>
+            <ul>
+                <li><strong>Projet 1 :</strong> Réalisation d'un serveur web sécurisé sous Linux.</li>
+                <li><strong>Projet 2 :</strong> Mise en place d'une architecture réseau virtuelle avec VirtualBox.</li>
+            </ul>
+        </section>
 
-    <section id="contact">
-        <h2>Contactez-moi</h2>
-        <p><strong>Email :</strong> <a href="mailto:md8118968@gmail.com">md8118968@gmail.com</a></p>
-        <p><strong>Téléphone :</strong> 06 05 58 49 88</p>
-    </section>
+        <section id="contact" class="section">
+            <h2>Contactez-moi</h2>
+            <p>Email : <a href="mailto:md8118968@gmail.com">md8118968@gmail.com</a></p>
+            <p>Téléphone : <a href="tel:+33605584988">06 05 58 49 88</a></p>
+        </section>
+    </main>
 
     <footer>
         <p>© 2025 Maguette Diop. Tous droits réservés.</p>
     </footer>
+
 </body>
 </html>

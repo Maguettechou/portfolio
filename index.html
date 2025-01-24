@@ -1,265 +1,86 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio de Maguette Diop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-            color: #333;
-            line-height: 1.6;
+        /* Gestion des liens actifs dans la navigation */
+        .nav-link.active {
+            color: #0ea5e9; /* Bleu clair */
         }
 
-        header {
-            background-color: #1e2a47; /* Bleu foncé */
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Transition sur les liens */
+        .nav-link {
+            transition: color 0.3s ease, transform 0.3s ease;
         }
 
-        header h1 {
-            font-size: 3rem;
-            margin: 0;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            font-style: italic;
-            margin-top: 10px;
-        }
-
-        nav {
-            background-color: #2d3e5f; /* Bleu moyen */
-            color: white;
-            display: flex;
-            justify-content: center;
-            padding: 15px 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 20px;
-            font-size: 1.1rem;
-            transition: color 0.3s;
-            padding: 10px 15px;
-        }
-
-        nav a:hover, nav a.active {
-            color: #00bcd4; /* Teinte cyan */
-        }
-
-        section {
-            padding: 80px 20px;
-            max-width: 1100px;
-            margin: auto;
-            text-align: center;
-        }
-
-        h2 {
-            font-size: 2.5rem;
-            color: #2c3e50; /* Gris foncé */
-            margin-bottom: 20px;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-        }
-
-        .card {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-
-        .card h3 {
-            font-size: 1.8rem;
-            color: #1e2a47; /* Bleu foncé */
-            margin-bottom: 15px;
-        }
-
-        .card p {
-            color: #7f8c8d; /* Gris clair */
-            font-size: 1rem;
-        }
-
-        footer {
-            background-color: #2d3e5f; /* Bleu moyen */
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
-
-        footer p {
-            margin: 0;
-        }
-
-        .button {
-            background-color: #00bcd4; /* Teinte cyan */
-            color: white;
-            padding: 12px 30px;
-            text-decoration: none;
-            border-radius: 25px;
-            margin-top: 20px;
-            font-size: 1.1rem;
-            transition: background-color 0.3s;
-        }
-
-        .button:hover {
-            background-color: #0097a7; /* Teinte cyan foncé */
-        }
-
-        @media screen and (max-width: 768px) {
-            .grid {
-                grid-template-columns: 1fr;
-            }
-
-            nav a {
-                margin: 0 10px;
-            }
+        .nav-link:hover {
+            color: #60a5fa; /* Bleu clair */
+            transform: scale(1.05);
         }
     </style>
 </head>
-<body>
 
-<header>
-    <h1>Portfolio de Maguette Diop</h1>
-    <p>Étudiante en BTS SIO, option SISR</p>
-</header>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <header class="bg-blue-900 text-white py-16 shadow-lg text-center">
+        <h1 class="text-4xl font-bold">Portfolio de Maguette Diop</h1>
+        <p class="text-lg mt-4">Étudiante en BTS SIO, option SISR</p>
+    </header>
 
-<!-- Menu de navigation -->
-<nav>
-    <a href="#about" class="nav-link">À propos</a>
-    <a href="#skills" class="nav-link">Compétences</a>
-    <a href="#certifications" class="nav-link">Certifications</a>
-    <a href="#projects" class="nav-link">Projets</a>
-    <a href="#contact" class="nav-link">Contact</a>
-</nav>
-
-<!-- À propos -->
-<section id="about">
-    <h2>À propos de moi</h2>
-    <p>
-        Je m'appelle <strong>Maguette Diop</strong>, et je suis actuellement en première année de BTS Services Informatiques aux Organisations, option SISR (Solutions d'Infrastructure, Systèmes et Réseaux). Passionnée par l'informatique depuis mon plus jeune âge, j'ai choisi de me spécialiser dans la gestion des infrastructures et des systèmes.
-    </p>
-    <p>
-        Curieuse et toujours en quête de nouvelles connaissances, je suis particulièrement attirée par l'administration des réseaux, la sécurité informatique et la gestion des systèmes d'exploitation. Mon objectif est de devenir une experte dans ces domaines et d'acquérir les compétences nécessaires pour optimiser les infrastructures IT dans le monde professionnel.
-    </p>
-     <section >
-        <a href="assets/CV MAGUETTE (2).pdf" target="_blank" class="button">Consulter mon CV</a>
-        <a href="assets/CV MAGUETTE (2).pdf" download class="button">Télécharger mon CV</a>
-
-    </section>
-    
-</section>
-
-<!-- Compétences -->
-<section id="skills">
-    <h2>Mes compétences</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>Administration des systèmes</h3>
-            <p>Installation, configuration et gestion des systèmes d'exploitation (Linux, Windows Server).</p>
+    <!-- Navigation -->
+    <nav class="bg-blue-800 text-white sticky top-0 z-50">
+        <div class="container mx-auto flex justify-center space-x-8 py-4">
+            <a href="#about" class="nav-link hover:text-blue-400">À propos</a>
+            <a href="#skills" class="nav-link hover:text-blue-400">Compétences</a>
+            <a href="#certifications" class="nav-link hover:text-blue-400">Certifications</a>
+            <a href="#projects" class="nav-link hover:text-blue-400">Projets</a>
+            <a href="#contact" class="nav-link hover:text-blue-400">Contact</a>
         </div>
-        <div class="card">
-            <h3>Réseaux</h3>
-            <p>Configuration des réseaux locaux (LAN).</p>
-            <p>Création de machines virtuelles sur Proxmox (Windows Server 2022, Windows 10 Pro, Debian).</p>
-            <p>Configuration du rôle AD/DS.</p>
-            <p>Configuration des unités d'organisations (OU).</p>
-            <p>Gestion de stratégie de groupe (GPO).</p>
-        </div>
-        </div>
-        <div class="card">
-            <h3>Bases de données</h3>
-            <p>Gestion des bases de données SQL, création et optimisation des requêtes.</p>
-        </div>
-        <div class="card">
-            <h3>Automatisation</h3>
-            <p>Automatisation des tâches administratives via PowerShell, Bash et Python.</p>
-        </div>
-    </div>
-</section>
+    </nav>
 
-<!-- Certifications -->
-<section id="certifications">
-    <h2>Mes Certifications</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>PIX</h3>
-            <p>Certification PIX, validant mes compétences en numérique dans divers domaines de l'informatique.</p>
-        </div>
-        <div class="card">
-            <h3>SecNumAcademie</h3>
-            <p>Certification SecNumAcademie, pour prouver mes compétences en cybersécurité.</p>
-        </div>
-    </div>
-</section>
-
-<!-- Projets -->
-<section id="projects">
-    <h2>Mes projets</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>Installation d'un serveur Web</h3>
-            <p>Installation d'un serveur Apache et mise en place d'un site dynamique avec base de données MySQL.</p>
-            <div>
-
+    <!-- À propos -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-blue-900 mb-6">À propos de moi</h2>
+            <p class="text-lg leading-7 text-gray-600">
+                Je m'appelle <strong>Maguette Diop</strong>, et je suis actuellement en première année de BTS Services Informatiques aux Organisations, option SISR (Solutions d'Infrastructure, Systèmes et Réseaux).
+            </p>
+            <p class="mt-4 text-lg leading-7 text-gray-600">
+                Curieuse et passionnée par l'informatique, je me spécialise dans la gestion des infrastructures IT, la sécurité des systèmes et l'administration réseau. Mon objectif : exceller dans ce domaine et apporter des solutions performantes et sécurisées.
+            </p>
+            <div class="mt-8">
+                <a href="assets/CV%20MAGUETTE%20(2).pdf" target="_blank" class="bg-blue-500 text-white py-3 px-6 rounded-full shadow hover:bg-blue-600">Consulter mon CV</a>
+                <a href="assets/CV%20MAGUETTE%20(2).pdf" download class="bg-gray-200 text-blue-500 py-3 px-6 rounded-full shadow ml-4 hover:bg-gray-300">Télécharger mon CV</a>
             </div>
-        </div class="card">
-        <h3>Projet d'infrastructure informatique</h3>
-            <ul>
-                <li><strong>Mission 1 :</strong> Audit de l'existant</li>
-                <li><strong>Mission 2 :</strong> Préparation/Configuration du serveur Windows 2022</li>
-                <li><strong>Mission 3 :</strong> Intégration d'une machine dans le domaine</li>
-                <li><strong>Mission 4 :</strong> Partage de ressources/lecteurs réseau et stratégies</li>
-                <li><strong>Mission 5 :</strong> Partage d'imprimantes et déploiement via GPO</li>
-                <li><strong>Mission 6 :</strong> Installation/Configuration d'un helpdesk (GLPI)</li>
-                <li><strong>Mission 7 :</strong> Inventorier un parc informatique avec l'agent GLPI</li>
-                <li><strong>Mission 8 :</strong> Installation/Configuration d'un cloud privé (Nextcloud)</li>
-            </ul>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Contact -->
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Pour toute question ou collaboration, n'hésitez pas à me contacter par email : <a href="mailto:md8118968@gmail.com">md8118968@gmail.com</a></p>
-    <p>Vous pouvez aussi me joindre par téléphone au : <strong>0605584988</strong></p>
-</section>
-
-<footer>
-    <p>&copy; 2025 Maguette Diop. Tous droits réservés.</p>
-</footer>
-
-<script>
-    // Gestion des liens de navigation
-    const navLinks = document.querySelectorAll('.nav-link');
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.forEach(link => link.classList.remove('active'));
-            link.classList.add('active');
-        });
-    });
-</script>
-
-</body>
-</html>
+    <!-- Compétences -->
+    <section id="skills" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-blue-900 text-center mb-12">Mes compétences</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+                    <h3 class="text-xl font-bold text-blue-800 mb-4">Administration des systèmes</h3>
+                    <p class="text-gray-600">Installation, configuration et gestion des systèmes Linux et Windows Server.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+                    <h3 class="text-xl font-bold text-blue-800 mb-4">Réseaux</h3>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Configuration des réseaux locaux (LAN)</li>
+                        <li>Création de machines virtuelles sur Proxmox</li>
+                        <li>Configuration du rôle AD/DS</li>
+                        <li>Gestion de stratégies de groupe (GPO)</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+                    <h3 class="text-xl font-bold text-blue-800 mb-4">Bases de données</h3>
+                    <p class="text-gray-600">Gestion des bases SQL, optimisation et création de requêtes complexes.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+                    <h3 class="text-xl font-bold text-blue-800 mb-4">Automatisation</h3>
+                    <p

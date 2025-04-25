@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio de Maguette Diop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .nav-link.active { color: #0ea5e9; }
+    .nav-link { transition: color 0.3s ease, transform 0.3s ease; }
+    .nav-link:hover { color: #60a5fa; transform: scale(1.05); }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <header class="bg-blue-900 text-white py-16 shadow-lg text-center">
+    <h1 class="text-4xl font-bold">Portfolio de Maguette Diop</h1>
+    <p class="text-lg mt-4">Étudiante en BTS SIO, option SISR</p>
+  </header>
+
+  <nav class="bg-blue-800 text-white sticky top-0 z-50">
+    <div class="container mx-auto flex justify-center space-x-8 py-4">
+      <a href="#about" class="nav-link hover:text-blue-400">À propos</a>
+      <a href="#skills" class="nav-link hover:text-blue-400">Compétences</a>
+      <a href="#certifications" class="nav-link hover:text-blue-400">Certifications</a>
+      <a href="#projects" class="nav-link hover:text-blue-400">Projets</a>
+      <a href="#contact" class="nav-link hover:text-blue-400">Contact</a>
+    </div>
+  </nav>
+
+  <section id="about" class="py-16 bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-blue-900 mb-6">À propos de moi</h2>
+      <p class="text-lg leading-7 text-gray-600">
+        Je m'appelle <strong>Maguette Diop</strong>, et je suis actuellement en première année de BTS Services Informatiques aux Organisations, option SISR (Solutions d'Infrastructure, Systèmes et Réseaux).
+      </p>
+      <p class="mt-4 text-lg leading-7 text-gray-600">
+        Curieuse et passionnée par l'informatique, je me spécialise dans la gestion des infrastructures IT, la sécurité des systèmes et l'administration réseau. Mon objectif : exceller dans ce domaine et apporter des solutions performantes et sécurisées.
+      </p>
+      <div class="mt-8">
+        <a href="Cv.pdf" target="_blank" class="bg-blue-500 text-white py-3 px-6 rounded-full shadow hover:bg-blue-600">Consulter mon CV</a>
+        <a href="Cv.pdf" download class="bg-gray-200 text-blue-500 py-3 px-6 rounded-full shadow ml-4 hover:bg-gray-300">Télécharger mon CV</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-blue-900 text-center mb-12">Mes compétences</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+          <h3 class="text-xl font-bold text-blue-800 mb-4">Réseaux & Systèmes</h3>
+          <ul class="list-disc list-inside text-gray-600">
+            <li>Création de machines virtuelles (Proxmox, VirtualBox)</li>
+            <li>Installation et configuration de Windows Server 2022</li>
+            <li>Intégration dans un domaine Active Directory</li>
+            <li>Gestion des stratégies de groupe (GPO)</li>
+            <li>Configuration d’adresses IP</li>
+            <li>Utilisation de Cisco Packet Tracer</li>
+          </ul>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+          <h3 class="text-xl font-bold text-blue-800 mb-4">Linux</h3>
+          <ul class="list-disc list-inside text-gray-600">
+            <li>Installation de Debian</li>
+            <li>Commandes de base en ligne de commande</li>
+            <li>Serveur LAMP (Linux, Apache, MySQL, PHP)</li>
+            <li>Gestion d’un serveur LDAP</li>
+          </ul>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+          <h3 class="text-xl font-bold text-blue-800 mb-4">Développement Web</h3>
+          <ul class="list-disc list-inside text-gray-600">
+            <li>HTML / CSS</li>
+            <li>PHP (bases)</li>
+            <li>JavaScript (bases)</li>
+            <li>Python (bases)</li>
+          </ul>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+          <h3 class="text-xl font-bold text-blue-800 mb-4">Outils & Logiciels</h3>
+          <ul class="list-disc list-inside text-gray-600">
+            <li>GLPI (helpdesk et inventaire)</li>
+            <li>Nextcloud (cloud privé)</li>
+            <li>Docker (conteneurs de services)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="certifications" class="py-16 bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-blue-900 mb-12">Mes Certifications</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg">
+          <h3 class="text-xl font-bold text-blue-800 mb-4">Cisco</h3>
+          <p class="text-gray-600">Badge obtenu pour la formation “Les premiers pas avec Cisco” validant les bases des réseaux et de la cybersécurité.</p>
+          <img src="image/Cisco.png" alt="Badge Cisco" class="w-full h-auto rounded-lg">
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg">
+          <h3 class="text-xl font-bold text-blue-800 mb-4">SecNumAcademie</h3>
+          <p class="text-gray-600">Formation en cybersécurité validée par l'ANSSI.</p>
+          <img src="image/secnum1.png" alt="Module 1 SecNumAcademie" class="w-full h-auto rounded-lg">
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg">
+          <h3 class="text-xl font-bold text-blue-800 mb-4">Cursa</h3>
+          <p class="text-gray-600">Badge obtenu pour la formation “Les bases de l’informatique”.</p>
+          <img src="image/cursa.JPG" alt="Badge Cursa" class="w-full h-auto rounded-lg">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section id="projects" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-blue-900 mb-12">Mes projets</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+          <h3 class="text-xl font-bold text-blue-800 mb-4">Projet APAEIA</h3>
+          <ul class="text-gray-600 text-left list-disc list-inside">
+            <li>Audit de l’existant</li>
+            <li>Préparation/Configuration du serveur Windows 2022</li>
+            <li>Intégration d’une machine dans le domaine</li>
+            <li>Partage de ressources et stratégies via GPO</li>
+            <li>Déploiement d’imprimantes avec GPO</li>
+            <li>Helpdesk avec GLPI</li>
+            <li>Inventaire avec l’agent GLPI</li>
+            <li>Cloud privé avec Nextcloud</li>
+          </ul>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+          <h3 class="text-xl font-bold text-blue-800 mb-4">Projet SISR – Proxmox & FOG</h3>
+          <p class="text-gray-600">Création d'une infrastructure virtuelle sous Proxmox avec automatisation du déploiement via FOG Project.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+          <h3 class="text-xl font-bold text-blue-800 mb-4">GLPI Helpdesk</h3>
+          <p class="text-gray-600">Installation et paramétrage complet d’un système de gestion de tickets et inventaire matériel avec l’agent GLPI.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+          <h3 class="text-xl font-bold text-blue-800 mb-4">Nextcloud</h3>
+          <p class="text-gray-600">Installation et configuration d’un cloud privé pour synchronisation de fichiers sécurisée sur réseau local.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+          <h3 class="text-xl font-bold text-blue-800 mb-4">Configuration de serveurs Windows</h3>
+          <p class="text-gray-600">Mise en place de rôles AD DS, DNS, intégration de postes clients, sécurisation avec GPO.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-blue-900 mb-6">Contactez-moi</h2>
+      <p class="text-gray-600">Pour toute question ou opportunité, n'hésitez pas à me joindre :</p>
+      <p class="mt-4 text-lg text-gray-800">Email : <a href="mailto:md8118968@gmail.com" class="text-blue-500 hover:underline">md8118968@gmail.com</a></p>
+      <p class="text-lg text-gray-800">Téléphone : <strong>0605584988</strong></p>
+    </div>
+  </section>
+</body>
+</html>
